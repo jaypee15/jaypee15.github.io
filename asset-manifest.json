@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b0c95a6e.css",
-    "main.js": "/portfolio/static/js/main.05b94063.js",
-    "static/media/potrait.png": "/portfolio/static/media/potrait.fe478e1afa08d9df3add.png",
-    "static/media/NodeJSResume.pdf": "/portfolio/static/media/NodeJSResume.f094367640f5aa44ca5d.pdf",
-    "static/media/saira-semi-condensed-all-600-normal.woff": "/portfolio/static/media/saira-semi-condensed-all-600-normal.af2ea2213c9fd134ab39.woff",
-    "static/media/saira-semi-condensed-all-400-normal.woff": "/portfolio/static/media/saira-semi-condensed-all-400-normal.2248cc2ca7f25d0c9f0a.woff",
-    "static/media/saira-all-600-normal.woff": "/portfolio/static/media/saira-all-600-normal.8ab9dc89091eca9e6bc6.woff",
-    "static/media/saira-semi-condensed-latin-400-normal.woff2": "/portfolio/static/media/saira-semi-condensed-latin-400-normal.194ab9fa65f076d88835.woff2",
-    "static/media/saira-semi-condensed-latin-600-normal.woff2": "/portfolio/static/media/saira-semi-condensed-latin-600-normal.189fe66dc0e7b6e9b671.woff2",
-    "static/media/saira-semi-condensed-latin-ext-600-normal.woff2": "/portfolio/static/media/saira-semi-condensed-latin-ext-600-normal.df877aa944b2cbcccfd5.woff2",
-    "static/media/saira-semi-condensed-latin-ext-400-normal.woff2": "/portfolio/static/media/saira-semi-condensed-latin-ext-400-normal.c79d8f4417c255c114bb.woff2",
-    "static/media/saira-latin-600-normal.woff2": "/portfolio/static/media/saira-latin-600-normal.8616587861fb1d38ad14.woff2",
-    "static/media/saira-latin-ext-600-normal.woff2": "/portfolio/static/media/saira-latin-ext-600-normal.c6616d77d4790027a622.woff2",
-    "static/media/saira-semi-condensed-vietnamese-400-normal.woff2": "/portfolio/static/media/saira-semi-condensed-vietnamese-400-normal.cbb97b24326751b97f61.woff2",
-    "static/media/saira-semi-condensed-vietnamese-600-normal.woff2": "/portfolio/static/media/saira-semi-condensed-vietnamese-600-normal.db8a3aeef520c926d07d.woff2",
-    "static/media/saira-vietnamese-600-normal.woff2": "/portfolio/static/media/saira-vietnamese-600-normal.7351d7d4c43c6f868fae.woff2",
-    "index.html": "/portfolio/index.html",
-    "main.b0c95a6e.css.map": "/portfolio/static/css/main.b0c95a6e.css.map",
-    "main.05b94063.js.map": "/portfolio/static/js/main.05b94063.js.map"
+    "main.css": "/static/css/main.f416e2b5.css",
+    "main.js": "/static/js/main.f44f1013.js",
+    "static/media/potrait.png": "/static/media/potrait.fe478e1afa08d9df3add.png",
+    "static/media/NodeJSResume.pdf": "/static/media/NodeJSResume.f094367640f5aa44ca5d.pdf",
+    "static/media/saira-semi-condensed-all-600-normal.woff": "/static/media/saira-semi-condensed-all-600-normal.af2ea2213c9fd134ab39.woff",
+    "static/media/saira-semi-condensed-all-400-normal.woff": "/static/media/saira-semi-condensed-all-400-normal.2248cc2ca7f25d0c9f0a.woff",
+    "static/media/saira-all-600-normal.woff": "/static/media/saira-all-600-normal.8ab9dc89091eca9e6bc6.woff",
+    "static/media/saira-semi-condensed-latin-400-normal.woff2": "/static/media/saira-semi-condensed-latin-400-normal.194ab9fa65f076d88835.woff2",
+    "static/media/saira-semi-condensed-latin-600-normal.woff2": "/static/media/saira-semi-condensed-latin-600-normal.189fe66dc0e7b6e9b671.woff2",
+    "static/media/saira-semi-condensed-latin-ext-600-normal.woff2": "/static/media/saira-semi-condensed-latin-ext-600-normal.df877aa944b2cbcccfd5.woff2",
+    "static/media/saira-semi-condensed-latin-ext-400-normal.woff2": "/static/media/saira-semi-condensed-latin-ext-400-normal.c79d8f4417c255c114bb.woff2",
+    "static/media/saira-latin-600-normal.woff2": "/static/media/saira-latin-600-normal.8616587861fb1d38ad14.woff2",
+    "static/media/saira-latin-ext-600-normal.woff2": "/static/media/saira-latin-ext-600-normal.c6616d77d4790027a622.woff2",
+    "static/media/saira-semi-condensed-vietnamese-400-normal.woff2": "/static/media/saira-semi-condensed-vietnamese-400-normal.cbb97b24326751b97f61.woff2",
+    "static/media/saira-semi-condensed-vietnamese-600-normal.woff2": "/static/media/saira-semi-condensed-vietnamese-600-normal.db8a3aeef520c926d07d.woff2",
+    "static/media/saira-vietnamese-600-normal.woff2": "/static/media/saira-vietnamese-600-normal.7351d7d4c43c6f868fae.woff2",
+    "index.html": "/index.html",
+    "main.f416e2b5.css.map": "/static/css/main.f416e2b5.css.map",
+    "main.f44f1013.js.map": "/static/js/main.f44f1013.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0c95a6e.css",
-    "static/js/main.05b94063.js"
+    "static/css/main.f416e2b5.css",
+    "static/js/main.f44f1013.js"
   ]
 }
