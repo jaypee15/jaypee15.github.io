@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Modal from "react-modal";
-import Resume from "../assets/NodeJSResume.pdf";
-import portrait from "../assets/potrait.png";
+import Resume from "../assets/Resume.pdf";
 import {
   TwitterIcon,
   MailIcon,
@@ -10,110 +8,87 @@ import {
   GithubIcon,
 } from "./svgs";
 
-const titles = [
-  "Backend \n Developer",
-  "NodeJs \n Developer",
-  "Backend \n Developer",
-  "JavaScript \n Developer",
-  "Fullstack \n Developer",
-  "Backend \n Developer",
-];
+// Helper to keep text clean
+const formatTitle = (text) => text;
 
-function formatTitle(text) {
-  return text.split(/\n+/).map((title, index) => <p key={index}>{title}</p>);
-}
+const titles = [
+  "SOFTWARE_ENGINEER",
+  "AI_ENGINEER",
+  "BACKEND_ENGINEER",
+  "FULLSTACK_ENGINEER",
+];
 
 const Hero = () => {
   const [title, setTitle] = useState(titles[0]);
-  const [toggleAnim, setToggleAnim] = useState(false);
-  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    const insertAnim = setTimeout(() => {
-      setToggleAnim(false);
-    }, 100);
-    const id = setTimeout(() => {
-      let currentIndex = titles.indexOf(title);
-      if (currentIndex === titles.length - 1) {
-        currentIndex = 0;
-        setTitle(titles[0]);
-      } else {
-        setTitle(titles[currentIndex + 1]);
-      }
-    }, 3000);
-    const removeAnim = setTimeout(() => {
-      setToggleAnim(true);
-    }, 2600);
-    return () => {
-      clearInterval(id);
-      clearInterval(insertAnim);
-      clearInterval(removeAnim);
-    };
-  }, [title]);
+    const id = setInterval(() => {
+      setTitle((prev) => {
+        const idx = titles.indexOf(prev);
+        return titles[(idx + 1) % titles.length];
+      });
+    }, 2500);
+    return () => clearInterval(id);
+  }, []);
 
-  const openModal = () => setModalIsOpen(true);
-  const closeModal = () => setModalIsOpen(false);
 
   return (
     <div className="hero-section">
+      {/* Decorative technical labels */}
+      <div style={{position: 'absolute', top: '10px', left: '10px', fontSize: '10px', color: '#64ffda', opacity: 0.7}}>
+        ID: USER_JP_01
+      </div>
+      <div style={{position: 'absolute', top: '10px', right: '10px', fontSize: '10px', color: '#00ff00', opacity: 0.7}}>
+        SYS_STATUS: ONLINE
+      </div>
+
       <div className="hero-sub-1">
         <div className="hero-sub-container">
-          <h4 className="hero-sub-1-intro">Hi, I’m Johnpaul Okoye,</h4>
+          <p className="hero-sub-1-intro" style={{fontFamily: 'Fira Code'}}>
+            {'>'} initialize_sequence(Johnpaul_Okoye)
+          </p>
           <div className="hero-sub-1-titles">
-            <h1 className={`hero-title ${toggleAnim && "pre-animation"}`}>
-              {formatTitle(title)}
+            <h1 className="hero-title">
+              {formatTitle(title)}<span className="blinking-cursor">_</span>
             </h1>
           </div>
           <p className="hero-sub-1-desc type5">
-            I'm a software developer passionate about shaping digital experiences. 
-            Adept in crafting robust server-side logic and seamless API interactions, 
-            I bring efficiency to authentication, authorization, data management, and server configuration. 
-            My commitment to security ensures applications withstand potential threats. 
-            I'm driven to build scalable solutions for a dynamic digital landscape. 
+            {'// SUMMARY' } <br/>
+            Specialized in robust server-side logic, API architecture, and database optimization. 
+            Designing scalable systems where security and efficiency are hard-coded requirements.
           </p>
         </div>
 
         <div className="hero-sub-1-buttons">
-        <button className="hero-sub-1-resume" onClick={openModal}>
-          View Resume
-        </button>
-        <a
-          href={Resume}
-          className="hero-sub-1-resume"
-          download
-        >
-          Download Resume
-        </a>
+          <a href={Resume} download>
+             DOWNLOAD_LOGS (Resume)
+          </a>
+          <button onClick={() => window.location.href = "mailto:okoyejohnpaul15@gmail.com"}>
+             ESTABLISH_CONNECTION
+          </button>
         </div>
         
-        <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="hero-sub-1-modal">
-          <button onClick={closeModal}>Close</button>
-          <iframe src={Resume} width="100%" height="600px" title="Resume"></iframe>
-        </Modal>
-        <div className="hero-sub-1-icons">
-          <a href="http://twitter.com/johnofpaul" target="_blank" rel="noreferrer">
-            <TwitterIcon />
-          </a>
-          <a href="https://github.com/jayee15" target="_blank" rel="noreferrer">
-            <GithubIcon />
-          </a>
-          <a href="mailto:okoyejohnpaul15@gmail.com?" target="_blank" rel="noreferrer">
-            <MailIcon />
-          </a>
-          <a href="https://wa.me/2348171851665" target="_blank" rel="noreferrer">
-            <WhatsappIcon />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/johnpaulokoye"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LinkedInIcon />
-          </a>
+        {/* All Icons rendered here as "Ports" */}
+        <div className="hero-sub-1-icons" style={{marginTop: '30px', borderTop: '1px dashed #233554', paddingTop: '15px'}}>
+            <p style={{fontSize: '10px', color: '#8892b0', marginBottom: '10px'}}>{'// EXT_CONNECTIVITY:'}</p>
+            <div style={{display: 'flex', gap: '15px'}}>
+              <a href="http://twitter.com/johnofpaul" target="_blank" rel="noreferrer">
+                <TwitterIcon />
+              </a>
+              <a href="https://github.com/jaypee15" target="_blank" rel="noreferrer">
+                <GithubIcon />
+              </a>
+              <a href="mailto:okoyejohnpaul15@gmail.com?" target="_blank" rel="noreferrer">
+                <MailIcon />
+              </a>
+              <a href="https://wa.me/2349050741851" target="_blank" rel="noreferrer">
+                <WhatsappIcon />
+              </a>
+              <a href="https://www.linkedin.com/in/johnpaulokoye" target="_blank" rel="noreferrer">
+                <LinkedInIcon />
+              </a>
+            </div>
         </div>
-      </div>
-      <div className="hero-sub-2">
-        <img src={portrait} alt="avatar_jaypee" />
       </div>
     </div>
   );
