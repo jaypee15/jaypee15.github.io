@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.78bc53a8.css",
+    "main.css": "/static/css/main.811d31dd.css",
     "main.js": "/static/js/main.920222f6.js",
     "static/media/Resume.pdf": "/static/media/Resume.18c2e4ff2b8e0c1295b2.pdf",
     "static/media/saira-semi-condensed-all-600-normal.woff": "/static/media/saira-semi-condensed-all-600-normal.af2ea2213c9fd134ab39.woff",
@@ -16,11 +16,11 @@
     "static/media/saira-semi-condensed-vietnamese-600-normal.woff2": "/static/media/saira-semi-condensed-vietnamese-600-normal.db8a3aeef520c926d07d.woff2",
     "static/media/saira-vietnamese-600-normal.woff2": "/static/media/saira-vietnamese-600-normal.7351d7d4c43c6f868fae.woff2",
     "index.html": "/index.html",
-    "main.78bc53a8.css.map": "/static/css/main.78bc53a8.css.map",
+    "main.811d31dd.css.map": "/static/css/main.811d31dd.css.map",
     "main.920222f6.js.map": "/static/js/main.920222f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.78bc53a8.css",
+    "static/css/main.811d31dd.css",
     "static/js/main.920222f6.js"
   ]
 }
